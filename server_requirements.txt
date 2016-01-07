@@ -1,0 +1,13 @@
+game {
+	id:  int,
+	white: int/string,
+	black: int/string,
+	board_state: piece[][],
+	next_to_move: white/black,
+}
+
+piece {
+	starting_number: int,
+	movement_rule: lambda function,
+}
+
